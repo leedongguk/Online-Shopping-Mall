@@ -1,0 +1,53 @@
+/* ✅ 슬라이드 전체 컨테이너 */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ✅ 슬라이드 트랙 (가로 정렬 & 애니메이션) */
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* ✅ 개별 이미지 스타일 */
+.slider-image {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* ✅ 슬라이드 버튼 (위치 고정) */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    transition: background 0.3s;
+    z-index: 10; /* ✅ 버튼이 슬라이드보다 위에 위치하도록 */
+}
+
+/* ✅ 왼쪽 버튼 */
+.slider-button.left {
+    left: 10px; /* ✅ 왼쪽 정렬 */
+}
+
+/* ✅ 오른쪽 버튼 */
+.slider-button.right {
+    right: 10px; /* ✅ 오른쪽 정렬 */
+}
+
+/* ✅ 버튼 호버 시 배경색 변경 */
+.slider-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
