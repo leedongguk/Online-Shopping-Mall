@@ -43,7 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* ✅ 이미지가 벗어나지 않도록 설정 */
-    margin-right: 20px;
+    margin-right: 30px;
     flex-shrink: 0; /* ✅ 이미지 크기 유지 */
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .item-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
     flex: 1;
     color: #942f2f;
@@ -86,51 +86,17 @@ body {
 }
 
 .price {
-    font-size: 1rem;
+    font-size: 1.0rem;
     color: #787878;
-    margin-left: 100px;
-    align-items: center;
     justify-content: center;
     width:100%;
-}
-
-/* 📌 모바일 반응형 (최대 768px 이하) */
-@media screen and (max-width: 768px) {
-    .container {
-        height: 100vh; /* 모바일에서도 화면 전체 채우기 */
-    }
-
-    .item-image-container {
-        width: 180px;
-        height: 180px;
-    }
-
-    .item img {
-        max-width: 90%;
-        max-height: 90%;
-    }
-    .item-info h2 {
-        font-size: 2rem;
-    }
-
-    .item-info h3{
-        font-size: 1.5rem;
-        font-weight: 900;
-        flex: 1;
-        color: #942f2f;
-    }
-
-    .price {
-        font-size: 0.9rem;
-    }
-
-
 }
 
 /* 📌 더 작은 모바일 (최대 480px 이하) */
 @media screen and (max-width: 480px) {
     .container {
         height: 100vh;
+        max-width: 480px; /* ✅ 모바일에서는 480px */
     }
 
     .item {
@@ -148,7 +114,7 @@ body {
     }
 
     .item-info h2 {
-        font-size: 1.5rem;
+        font-size: 1.0rem;
     }
 
     .item-info h3{
@@ -159,9 +125,23 @@ body {
     }
 
     .price {
-        font-size: 0.8rem;
+        font-size: 1.0rem;
         item-align: right;
     }
+
+    .item-info p {
+        font-size: 0.6rem;
+        font-weight: 900;
+        color: #787878;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        word-wrap: break-word; /* ✅ 긴 텍스트 자동 줄바꿈 */
+        white-space: normal;
+        font-family: 'Montserrat-Bold';
+    }
+
+
 }
 
 

@@ -19,8 +19,8 @@ const HomeScreen = () => {
           <div className="item-info">
             <h3>BAG</h3>
             <h2>LEATER BAG</h2>
-            <span className="price">89,000₩</span>
             <p>A leather bag handmade by Italian craftsman</p>
+            <span className="price">89,000₩</span>
           </div>
         </div>
 

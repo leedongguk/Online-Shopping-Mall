@@ -9,7 +9,7 @@
     padding-top:10px;
     width: 100%;
     max-width: 100%; /* ✅ 부모 요소 크기에 맞게 조정 */
-    height: 60px; /* ✅ 기본 높이 설정 */
+    height: 40px; /* ✅ 기본 높이 설정 */
     margin: 0 auto;
 }
 
@@ -18,12 +18,12 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.2rem; /* ✅ 버튼 크기 조절 */
+    font-size: 1.0rem; /* ✅ 버튼 크기 조절 */
 }
 
 /* ✅ 헤더 로고 */
 .header-logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     font-family: 'KoPubWorld-Batang-Light';
@@ -36,25 +36,6 @@
     src: url('../assets/fonts/KoPubWorld Batang Light.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-}
-
-
-
-/* 📌 반응형 설정 (화면 크기에 맞게 헤더 조정) */
-@media screen and (max-width: 768px) {
-    .header {
-        height: 50px; /* ✅ 모바일에서 헤더 높이 줄이기 */
-        padding: 2px; /* ✅ 패딩 조정 */
-        padding-top:20px;
-    }
-
-    .header-logo {
-        font-size: 1.8rem; /* ✅ 모바일에서 글자 크기 줄이기 */
-    }
-
-    .header-button {
-        font-size: 2rem; /* ✅ 버튼 크기 줄이기 */
-    }
 }
 
 @media screen and (max-width: 480px) {

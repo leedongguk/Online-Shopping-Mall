@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       {/* 왼쪽: 뒤로가기 버튼 */}
       <button className="header-button" onClick={() => navigate(-1)}>
-        <IoChevronBack size={30} />
+        <IoChevronBack size={25} />
       </button>
 
       {/* 가운데: 로고 */}
@@ -18,7 +18,7 @@ const Header = () => {
 
       {/* 오른쪽: 장바구니 버튼 */}
       <button className="header-button" onClick={() => navigate("/cart")}>
-        <IoCartOutline size={30} />
+        <IoCartOutline size={25} />
       </button>
     </div>
   );

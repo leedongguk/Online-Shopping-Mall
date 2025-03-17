@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/Navbar.css"; // ✅ CSS 적용
-import { IoHomeOutline, IoSearchOutline, IoCartOutline } from "react-icons/io5"; // 아이콘 추가
+import { IoHomeOutline, IoSearchOutline, IoCartOutline, IoPersonOutline} from "react-icons/io5"; // 아이콘 추가
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,13 +9,16 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <button className="nav-button" onClick={() => navigate("/")}>
-        <IoHomeOutline size={24} />
+        <IoHomeOutline size={20} />
       </button>
       <button className="nav-button" onClick={() => navigate("/search")}>
-        <IoSearchOutline size={24} />
+        <IoSearchOutline size={20} />
       </button>
       <button className="nav-button" onClick={() => navigate("/cart")}>
-        <IoCartOutline size={24} />
+        <IoCartOutline size={20} />
+      </button>
+      <button className="nav-button" onClick={() => navigate("/cart")}>
+        <IoPersonOutline size={20} />
       </button>
     </div>
   );
